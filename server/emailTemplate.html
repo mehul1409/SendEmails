@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #007BFF;
+    font-size: 24px;
+    margin: 0;
+}
+
+.content {
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.content ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.content li {
+    margin: 5px 0;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>CICE Volunteers Interview Invitation</h1>
+        </div>
+        <div class="content">
+            <p>Hello {{name}}, We are pleased to inform you that you have been shortlisted for {{department}} volunteer interview at CICE.</p>
+            <p>Please see the details of your interview below:</p>
+            <ul>
+                <li><strong>Date:</strong>27/06/2024</li>
+                <li><strong>Time:</strong>5:00PM-5:30PM</li>
+            </ul>
+            <p>We recommend that you join the meeting a <b>few minutes early</b> to ensure everything is set up and working properly.</p>
+            <p>If you have any questions or need to reschedule, please do not hesitate to contact us at mehulbansalswm1234@gmail.com or 8595139817.</p>
+            <p>We look forward to speaking with you.</p>
+            <p>Best regards,</p>
+            <a href="[Meeting Link]" class="button">Join the Interview</a>
+        </div>
+        <div class="footer">
+            <p>© CICE. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
