@@ -70,5 +70,14 @@ router.post('/addvolunteer', async (req, res) => {
     }
 });
 
+router.get('/allvolunteers', async (req, res) => {
+    try {
+        const volunteers = await volunteer.find();
+        res.json( volunteers );
+    } catch (error) {
+        console.log(`Failed to fetch users ${error}`);
+        res.status(500).json({ error: 'Failed to fetch volunteers' });
+    }
+})
 
 module.exports = router;
